@@ -97,7 +97,7 @@ print(Primo(11))
 #Pregunta 32
 print("\nEJERCICIO 32\n")
 
-def promedioPrimos():
+def promediosrzh ():
 	conteo = 0; suma = 0
 	numero = int(input("Introduzca un numero y pare en cero: "))
 	i = 0
@@ -155,5 +155,108 @@ def anidados():
 			i=i+1
 			j=j+1
 		contador=contador+1
+		i=1
 
 anidados()
+
+#Pregunta 49
+print("\nEJERCICIO 49\n")
+def ternas():
+	contador=1
+	i=1;j=1
+
+	while (i<=9):
+		while (j<=3):
+			print(i," ",contador," ",j,"\n")
+			i=i+1
+			j=j+1
+		contador=contador+1
+		j=1
+
+#Pregunta 50
+print("\nEJERCICIO 50\n")
+def ejercicio50():
+	contador=1
+	i=0;j=1
+
+	while (i<=7):
+		while (j<=4):
+			print(i," ",contador,"\n")
+			i=i+1
+			j=j+1
+		contador=contador+1
+		j=1
+
+#EJERCICIOS ADICIONALES
+
+#ESCALERA DE ASTERISCOS
+def escalera(numero):
+	for i in range(1,numero+1):
+		for j in range(1,i+1):
+			print("*",end="")
+		print(end="\n")
+
+#ESCALERAS DE ASTERISCOS INVERSA
+def escalerainver(numero):
+	i=numero
+	while (i>0):
+		for j in range(1,i+1):
+			print("*",end="")
+		print(end="\n")
+		i=i-1
+
+#ESCALERA DE NÚMEROS
+def escaleranumeros(numero):
+	for i in range(1,numero+1):
+		for j in range(1,i+1):
+			print(j,end="")
+		print(end="\n")
+
+#PIRAMIDE DE ASTERISCOS
+def piramide(numero):
+	for i in range(1,numero+1):
+		j=1
+		k=1
+		while (j<=numero-1):
+			print(" ",end="")
+			j=j+1
+		while (k<=(i+(i-1))):
+			print("*",end="")
+			k=k+1
+		print(end="\n")
+		numero=numero-1
+		j=1
+		k=1
+
+#25-02-2020
+#PIRAMIDE INVERTIDA DE ASTERISCOS
+
+def piramideinvertida(numero):
+	for i in range(1,numero+1):
+		for j in range(1,i):
+			print(" ",end="")
+		k=1
+		while(k<=(numero+(numero-1))):
+			print("*",end="")
+			k=k+1
+		print(end="\n")
+		numero=numero-1
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		
